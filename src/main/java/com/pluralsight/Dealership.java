@@ -17,5 +17,5 @@ public class Dealership {
     this.address = address;
     this.phone = phone;
     this.inventory = new ArrayList<>(); // Initialized list
-}
+    }
 }
