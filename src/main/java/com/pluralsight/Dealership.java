@@ -1,6 +1,7 @@
 package com.pluralsight;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Dealership {
 
@@ -31,5 +32,17 @@ public class Dealership {
 
     public void removeVehicle(Vehicle vehicle) {
         inventory.remove(vehicle);
+    }
+    // Search Methods
+    public List<Vehicle> getVehiclesByPrice(double min, double max) {
+        List<Vehicle> results = new ArrayList<>();
+        for (Vehicle v : inventory) {
+            if (v.getPrice() >= min && v.getPrice() <= max) results.add(v);
+        }
+        return results;
+    }
+
+    public List<Vehicle> getAllVehicles() {
+        return inventory;
     }
 }
