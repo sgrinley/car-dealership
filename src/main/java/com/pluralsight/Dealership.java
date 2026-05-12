@@ -18,4 +18,12 @@ public class Dealership {
     this.phone = phone;
     this.inventory = new ArrayList<>(); // Initialized list
     }
+    // Add and Remove
+    public void addVehicle(Vehicle vehicle) {
+        inventory.add(vehicle);
+    }
+
+    public void removeVehicle(Vehicle vehicle) {
+        inventory.remove(vehicle);
+    }
 }
