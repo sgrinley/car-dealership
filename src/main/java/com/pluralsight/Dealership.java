@@ -18,6 +18,12 @@ public class Dealership {
     this.phone = phone;
     this.inventory = new ArrayList<>(); // Initialized list
     }
+
+    // Generate Getters
+    public String getName() { return name; }
+    public String getAddress() { return address; }
+    public String getPhone() { return phone; }
+
     // Add and Remove
     public void addVehicle(Vehicle vehicle) {
         inventory.add(vehicle);
